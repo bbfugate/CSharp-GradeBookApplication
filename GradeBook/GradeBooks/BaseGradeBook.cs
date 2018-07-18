@@ -188,6 +188,7 @@ namespace GradeBook.GradeBooks
                 Console.WriteLine("Average for only duel enrolled students is " + (dualEnrolledPoints / Students.Where(e => e.Type == StudentType.DualEnrolled).Count()));
         }
 
+
         public virtual void CalculateStudentStatistics(string name)
         {
             var student = Students.FirstOrDefault(e => e.Name == name);
